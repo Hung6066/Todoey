@@ -13,7 +13,7 @@
         <scene sceneID="lr3-o6-Pl3">
             <objects>
                 <tableViewController id="ELr-Nz-fRL" customClass="TodoListViewController" customModule="Todoey" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="q6c-rM-njc" customClass="ToDoItemCell">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="q6c-rM-njc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,11 +32,18 @@
                             <outlet property="delegate" destination="ELr-Nz-fRL" id="7vF-rV-Afm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="dZ2-YX-8pp"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="dZ2-YX-8pp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bzg-kg-wDG">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="ELr-Nz-fRL" id="AhT-IU-Wv0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czj-KD-GTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="-69"/>
+            <point key="canvasLocation" x="558" y="-69"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ajz-WY-t53">
